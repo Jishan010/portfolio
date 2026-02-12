@@ -1,0 +1,126 @@
+.skills {
+  padding: 6rem 0;
+  background: white;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.skill-category {
+  padding: 2rem;
+  background: #f8fafc;
+  border-radius: 15px;
+  border: 2px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+  border-color: #667eea;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.1);
+}
+
+.skill-category h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #1e293b;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skill-tag {
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+.skill-tag.soft {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.competencies, .soft-skills {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: #f8fafc;
+  border-radius: 15px;
+}
+
+.competencies h3, .soft-skills h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #1e293b;
+}
+
+.competencies-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.competency-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 10px;
+  border-left: 4px solid #667eea;
+  color: #334155;
+  font-weight: 500;
+}
+
+.check-icon {
+  width: 24px;
+  height: 24px;
+  background: #667eea;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.dark .skills {
+  background: #1e293b;
+}
+
+.dark .skill-category {
+  background: #0f172a;
+  border-color: #334155;
+}
+
+.dark .skill-category h3 {
+  color: #e2e8f0;
+}
+
+.dark .competencies, .dark .soft-skills {
+  background: #0f172a;
+}
+
+.dark .competencies h3, .dark .soft-skills h3 {
+  color: #e2e8f0;
+}
+
+.dark .competency-item {
+  background: #1e293b;
+  color: #cbd5e1;
+}
