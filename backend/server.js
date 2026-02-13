@@ -23,6 +23,7 @@ app.use(cors({
   origin: [
     'https://jishanansari.com',
     'https://www.jishanansari.com',
+    'https://api.jishanansari.com',
     'https://dlaar2r9rrzik.cloudfront.net',
     'http://jishan-portfolio-frontend-2026.s3-website.ap-south-1.amazonaws.com',
     'http://localhost:5173'
