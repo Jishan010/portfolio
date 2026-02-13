@@ -56,7 +56,7 @@ const profile = {
     year: 2013
   }],
   social: {
-    github: "https://github.com/jishan-ansari",
+    github: "https://github.com/jishan010",
     linkedin: "https://linkedin.com/in/jishan-ansari-213261a2",
     email: "jishan010@gmail.com"
   }
