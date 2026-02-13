@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { API_BASE_URL } from '../config';
 import './Experience.css';
 
 function Experience() {
   const [experiences, setExperiences] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/experiences')
+    axios.get(`${API_BASE_URL}/experiences`)
       .then(res => setExperiences(res.data.data))
       .catch(err => console.error('Error fetching experiences:', err));
   }, []);

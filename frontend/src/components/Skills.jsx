@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { API_BASE_URL } from '../config';
 import './Skills.css';
 
 function Skills() {
   const [skills, setSkills] = useState(null);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/skills')
+    axios.get(`${API_BASE_URL}/skills`)
       .then(res => setSkills(res.data.data))
       .catch(err => console.error('Error fetching skills:', err));
   }, []);

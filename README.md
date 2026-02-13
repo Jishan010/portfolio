@@ -190,5 +190,3 @@ This project is open source and available for personal use and learning purposes
 
 **Built with ❤️ by Jishan Ansari**  
 *Learning AWS Solutions Architect through hands-on project deployment*
-# portfolio
-# portfolio

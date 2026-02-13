@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { API_BASE_URL } from '../config';
 import './Hero.css';
 import profileImage from '../assets/ProfilePicture.jpg';
 
@@ -7,7 +8,7 @@ function Hero() {
   const [profile, setProfile] = useState(null);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/profile')
+    axios.get(`${API_BASE_URL}/profile`)
       .then(res => setProfile(res.data.data))
       .catch(err => console.error('Error fetching profile:', err));
   }, []);
