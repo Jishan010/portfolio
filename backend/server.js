@@ -18,9 +18,15 @@ const PORT = process.env.PORT || 5000;
 // ─── Middleware ────────────────────────────────────────────────────────────────
 app.use(helmet());
 
-// CORS Configuration - Simplified to allow all origins for now
+// CORS Configuration - Allow custom domain
 app.use(cors({
-  origin: '*',
+  origin: [
+    'https://jishanansari.com',
+    'https://www.jishanansari.com',
+    'https://dlaar2r9rrzik.cloudfront.net',
+    'http://jishan-portfolio-frontend-2026.s3-website.ap-south-1.amazonaws.com',
+    'http://localhost:5173'
+  ],
   credentials: false,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
